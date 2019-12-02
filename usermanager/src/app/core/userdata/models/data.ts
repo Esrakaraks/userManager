@@ -1,4 +1,4 @@
-export class ResponseData{
+export class Data{
     id?:number;
     name:string;
     job:string;
