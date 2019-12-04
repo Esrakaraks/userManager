@@ -5,8 +5,8 @@ const routes: Routes = [
   {
     path: "",
     loadChildren: () =>
-      import("./views/list/list.module").then(
-        m => m.ListModule
+      import("./views/home/home.module").then(
+        m => m.HomeModule
       )
   }
 ];

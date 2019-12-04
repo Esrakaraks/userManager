@@ -1,4 +1,4 @@
-import { ListComponent } from './list.component';
+import { ListComponent } from "./list.component";
 import { NgModule } from "@angular/core";
 import { RouterModule } from "@angular/router";
 import { CommonModule } from "@angular/common";
@@ -9,28 +9,11 @@ import { CommonModule } from "@angular/common";
     RouterModule.forChild([
       {
         path: "",
-        component: ListComponent,
-        children: [
-          {
-            path: "",
-            loadChildren: () => import("../list/list.component").then(m => m.ListComponent)
-          },
-          {
-            path: "form",
-            loadChildren: () =>
-              import("../form/form.component").then(m => m.FormComponent)
-          },
-         
-
-        ]
+        component:ListComponent
       }
     ])
   ],
   providers: [],
-  declarations: [
-    ListComponent
-    
-  ]
+  declarations: [ListComponent]
 })
-export class ListModule {
-}
+export class ListModule {}

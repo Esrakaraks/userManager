@@ -2,6 +2,8 @@ import { FormComponent } from "./form.component";
 import { NgModule } from "@angular/core";
 import { RouterModule } from "@angular/router";
 import { CommonModule } from "@angular/common";
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
@@ -11,7 +13,9 @@ import { CommonModule } from "@angular/common";
         path: "",
         component: FormComponent
       }
-    ])
+    ]),
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   declarations: [FormComponent]
